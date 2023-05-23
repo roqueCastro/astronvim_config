@@ -71,6 +71,7 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  -- TODO COMNENTS
   {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
@@ -84,5 +85,42 @@ return {
     keys = {
       { "<leader>T", "<cmd>TodoTelescope<cr>", desc = "Open TODOs in Telescope" },
     },
+  },
+  -- SORROUND
+  {
+    "kylechui/nvim-surround",
+    opts = {},
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    -- config = function()
+    --     require("nvim-surround").setup({
+    --         -- Configuration here, or leave empty to use defaults
+    --     })
+    -- end
+  },
+  -- PHP LARAVEL
+
+  {
+    "adalessa/laravel.nvim",
+    dependencies = {
+      "nvim-telescope/telescope.nvim",
+      "tpope/vim-dotenv",
+    },
+    cmd = { "Sail", "Artisan", "Composer", "Npm", "Yarn", "Laravel" },
+    keys = {
+      { "<leader>la", ":Laravel artisan<cr>" },
+      { "<leader>lr", ":Laravel routes<cr>" },
+      {
+        "<leader>lt",
+        function() require("laravel.tinker").send_to_tinker() end,
+        mode = "v",
+        desc = "Laravel Application Routes",
+      },
+    },
+    event = { "VeryLazy" },
+    config = function()
+      require("laravel").setup()
+      require("telescope").load_extension "laravel"
+    end,
   },
 }

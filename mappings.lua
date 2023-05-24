@@ -23,6 +23,9 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<leader>a"] = { "<cmd>echo 'Hellow world!'<cr>", desc = "Say hellow world" },
+
+    --LAS
+    ["K"] = { ":lua vim.lsp.buf.hover()<cr>", desc = "Hover Description" },
   },
   t = {
     -- setting a mapping to false will disable it

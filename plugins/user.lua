@@ -123,4 +123,16 @@ return {
       require("telescope").load_extension "laravel"
     end,
   },
+
+  {
+    "hrsh7th/cmp-nvim-lsp-signature-help",
+    opts = {},
+    event = { "VeryLazy" },
+  },
+
+  {
+    "hrsh7th/cmp-nvim-lsp-signature-help",
+    opts = {},
+    event = { "VeryLazy" },
+  },
 }

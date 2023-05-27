@@ -61,16 +61,7 @@ return {
     opts = {},
     event = "User AstroFile",
   },
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
-  -- },
+
   -- TODO COMNENTS
   {
     "folke/todo-comments.nvim",
@@ -124,15 +115,22 @@ return {
     end,
   },
 
+  -- GITLAZY
   {
-    "hrsh7th/cmp-nvim-lsp-signature-help",
+    "kdheepak/lazygit.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    lazy = true,
     opts = {},
-    event = { "VeryLazy" },
+    cmd = { "LazyGit" },
   },
 
+  --MOTION SPIDER
+  {
+    "chrisgrieser/nvim-spider",
+    lazy = true,
+  },
   {
     "hrsh7th/cmp-nvim-lsp-signature-help",
     opts = {},
-    event = { "VeryLazy" },
   },
 }

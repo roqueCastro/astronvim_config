@@ -9,8 +9,8 @@ return {
       { "anuvyklack/keymap-amend.nvim" },
     },
     -- config = function() require("fold-preview").setup {} end,
-    opts = {
-      auto = true,
+    optruets = {
+      auto = 0,
     },
   },
 }

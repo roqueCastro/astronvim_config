@@ -10,7 +10,6 @@ return {
     },
     -- config = function() require("fold-preview").setup {} end,
     opts = {
-      auto = 0,
     },
   },
 }

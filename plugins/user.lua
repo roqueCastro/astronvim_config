@@ -8,6 +8,8 @@ return {
     opts = {},
     event = "User AstroFile",
   },
+
+
   --EJECUTADOR DE COMANDOS CON DISEÑO
   --MEJORADO
   {
@@ -34,12 +36,15 @@ return {
       { "<leader>T", "<cmd>TodoTelescope<cr>", desc = "Open TODOs in Telescope" },
     },
   },
+  --
   -- SORROUND
+  -- --
   {
     "kylechui/nvim-surround",
     opts = {},
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
+
     -- config = function()
     --     require("nvim-surround").setup({
     --         -- Configuration here, or leave empty to use defaults
@@ -60,10 +65,11 @@ return {
   {
     "chrisgrieser/nvim-spider",
     lazy = true,
+    opts = {}, 
   },
 
-  -- {
-  --   "hrsh7th/cmp-nvim-lsp-signature-help",
-  --   opts = {},
-  -- },
+  {
+    "hrsh7th/cmp-nvim-lsp-signature-help",
+    opts = {},
+  },
 }

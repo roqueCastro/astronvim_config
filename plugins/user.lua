@@ -68,8 +68,8 @@ return {
     opts = {}, 
   },
 
-  {
-    "hrsh7th/cmp-nvim-lsp-signature-help",
-    opts = {},
-  },
+  -- {
+  --   "hrsh7th/cmp-nvim-lsp-signature-help",
+  --   opts = {},
+  -- },
 }

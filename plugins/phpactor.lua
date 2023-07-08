@@ -9,11 +9,20 @@ return {
     opts = {
       install = {
         bin = vim.fn.stdpath "data" .. "/mason/bin/phpactor",
-          php_bin = "php7.2",
+        php_bin = "php7.2",
       },
       lspconfig = {
         enabled = true,
       },
+    },
+  },
+
+  --BLADE
+  {
+    "jwalton512/vim-blade",
+    event = "User AstroFile",
+    config = true,
+    opts = {
     },
   },
 }

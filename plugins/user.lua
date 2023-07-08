@@ -9,7 +9,6 @@ return {
     event = "User AstroFile",
   },
 
-
   --EJECUTADOR DE COMANDOS CON DISEÑO
   --MEJORADO
   {
@@ -38,7 +37,7 @@ return {
   },
   --
   -- SORROUND
-  -- --
+  --
   {
     "kylechui/nvim-surround",
     opts = {},
@@ -72,4 +71,14 @@ return {
   --   "hrsh7th/cmp-nvim-lsp-signature-help",
   --   opts = {},
   -- },
+
+  {
+    "ibhagwan/fzf-lua",
+    -- optional for icon support
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      --         -- calling `setup` is optional for customization
+      require("fzf-lua").setup {}
+    end,
+  },
 }

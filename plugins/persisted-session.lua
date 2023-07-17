@@ -21,5 +21,9 @@ return {
         reset_prompt_after_deletion = false,                           -- whether to reset prompt after session deleted
       },
     },
+    cmd = { "TodoQuickFix" },
+    keys = {
+      { "<C-t>p", "<cmd>Telescope persisted<cr>", desc = "Open telescope session" },
+    },
   },
 }

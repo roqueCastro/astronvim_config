@@ -40,11 +40,10 @@ return {
         "<cmd>Telescope advanced_git_search diff_commit_line<cr>",
         desc = "Telescope",
       },{
-        "<leader>agl",
+        "<leader>aglll",
         "<cmd>Telescope advanced_git_search search_log_content_file<cr>",
         desc = "Open file local, git commits everything where the current file is",
       },
-,
     },
   },
 }

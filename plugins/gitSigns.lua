@@ -7,12 +7,25 @@ return {
       {
         "<leader>gph",
         "<cmd>Gitsigns prev_hunk<cr>",
-        desc = "Anterior cambio de git",
+        desc = "Previous Git change ::GitSigns",
       },
+
+      {
+        "<leader>gvh",
+        "<cmd>Gitsigns preview_hunk<cr>",
+        desc = "Preview change ::GitSigns",
+      },
+      
+      {
+        "<leader>grh",
+        "<cmd>Gitsigns reset_hunk<cr>",
+        desc = "Reset Git change ::GitSigns",
+      },
+
       {
         "<leader>gnh",
         "<cmd>Gitsigns next_hunk<cr>",
-        desc = "Siguiente cambio de git",
+        desc = "Next Git change ::GitSigns",
       },
     },
     -- config = function() require("gitsigns").setup() end,

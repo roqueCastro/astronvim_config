@@ -4,6 +4,8 @@ return {
     dependencies = {
       "nvim-telescope/telescope.nvim",
       "tpope/vim-dotenv",
+      "MunifTanjim/nui.nvim",
+      "nvimtools/none-ls.nvim",
     },
     cmd = { "Sail", "Artisan", "Composer", "Npm", "Yarn", "Laravel" },
     keys = {
@@ -17,9 +19,6 @@ return {
       },
     },
     event = { "VeryLazy" },
-    config = function()
-      require("laravel").setup()
-      require("telescope").load_extension "laravel"
-    end,
+    config = true,
   },
 }

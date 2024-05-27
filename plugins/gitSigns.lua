@@ -5,7 +5,7 @@ return {
     event = "User AstroFile",
     keys = {
       {
-        "<leader>gph",
+        "<leader>gbh",
         "<cmd>Gitsigns prev_hunk<cr>",
         desc = "Previous Git change ::GitSigns",
       },
